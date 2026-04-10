@@ -100,6 +100,60 @@
 
 .icon { font-size: 3rem; margin-bottom: 10px; }
 
+/* SECTION GALLERY POSTER */
+.poster-gallery {
+    padding: 60px 10%;
+    background-color: #f0f2f5;
+}
+
+.poster-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.poster-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+    text-align: center;
+}
+
+.poster-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Efek saat gambar disentuh (hover) */
+.poster-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.poster-item img:hover {
+    transform: scale(1.05);
+}
+
+.poster-info {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #2d3436;
+    font-size: 1.1rem;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    .poster-container {
+        grid-template-columns: 1fr; /* Satu kolom di HP */
+    }
+}
+
 /* Mobile Responsive */
 @media (max-width: 600px) {
     .hero h1 { font-size: 2.5rem; }
