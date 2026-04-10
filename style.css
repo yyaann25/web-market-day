@@ -51,6 +51,59 @@
 @media (max-width: 600px) {
     .hero h1 { font-size: 2.5rem; }
     .announcement-box { padding: 20px; }
+}/* (Gunakan CSS sebelumnya, lalu tambahkan/update bagian ini) */
+
+.announcement-box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    border-left: 8px solid #f1c40f;
+}
+
+.greeting { font-weight: bold; color: #2c3e50; margin-bottom: 10px; }
+
+.qa-box {
+    background: #fdf9e7;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.details {
+    background: #2d3436;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.details p { margin: 5px 0; }
+
+.benefits ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.benefits li { margin-bottom: 10px; }
+
+.promo-footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: #2d3436;
+}
+
+.icon { font-size: 3rem; margin-bottom: 10px; }
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .hero h1 { font-size: 2.5rem; }
+    .announcement-box { padding: 20px; }
 }* {
     margin: 0;
     padding: 0;
